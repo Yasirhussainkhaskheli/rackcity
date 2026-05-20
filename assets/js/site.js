@@ -15,6 +15,27 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ── HAMBURGER / MOBILE NAV
+// Homepage hero slider
+const heroSlides = document.querySelectorAll('.home-page .hero-bg-slide');
+if (heroSlides.length > 1) {
+  let activeHeroSlide = 0;
+
+  window.setInterval(() => {
+    const previousSlide = heroSlides[activeHeroSlide];
+    activeHeroSlide = (activeHeroSlide + 1) % heroSlides.length;
+    const nextSlide = heroSlides[activeHeroSlide];
+
+    previousSlide.classList.remove('is-active');
+    previousSlide.classList.add('is-leaving');
+    nextSlide.classList.remove('is-leaving');
+    nextSlide.classList.add('is-active');
+
+    window.setTimeout(() => {
+      previousSlide.classList.remove('is-leaving');
+    }, 1200);
+  }, 3500);
+}
+
 const hamburger = document.getElementById('hamburger');
 const navOverlay = document.getElementById('navOverlay');
 let navOpen = false;
