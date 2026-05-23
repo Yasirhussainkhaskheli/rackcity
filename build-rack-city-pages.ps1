@@ -785,7 +785,7 @@ function BuildHomeMain($page) {
   }
 </style>
 <section class="hero" id="hero" aria-label="Homepage">
-  <div class="hero-bg" id="heroBg" role="img" aria-label="Homepage"></div>
+  <div class="hero-bg" id="heroBg" role="img" aria-label="Homepage" style="background-image:url('/assets/images/og-smash-burger-banner-landscape.jpg')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-left">
