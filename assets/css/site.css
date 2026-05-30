@@ -2917,3 +2917,72 @@ body .reviews-track-wrap {
   width: 100% !important;
   max-width: none !important;
 }
+
+/* Keep non-footer supporting text readable without changing headings. */
+body :where(
+  .nav-logo .sub,
+  .nav-links a,
+  .hero-eyebrow,
+  .trust-text .t-label,
+  .trust-text .t-detail,
+  .hero-scroll,
+  .ticker-item,
+  .section-tag,
+  .btn-primary,
+  .btn-outline,
+  .btn-dark,
+  .btn-black,
+  .btn-black-outline,
+  .review-stars span,
+  .review-author,
+  .chip,
+  .stat-label,
+  .cat-tag,
+  .cat-desc,
+  .mic-cat,
+  .mic-desc,
+  .mic-note,
+  .mic-link,
+  .oo-text p,
+  .hours-table td:first-child,
+  .area-tag,
+  .faq-icon,
+  .mobile-cta-bar a,
+  .doc-callout-kicker,
+  .doc-review-stars
+) {
+  font-size: 14px !important;
+}
+
+body :where(
+  .hero-sub,
+  .reviews-header p,
+  .review-text,
+  .story-content p,
+  .categories-header p,
+  .menu-feature-header p,
+  .how-step p,
+  .halal-point p,
+  .order-content-side p,
+  .delivery-left p,
+  .faq-answer p,
+  .cta-band-right p,
+  .franchise-teaser-left p,
+  .doc-callout p,
+  .doc-item-body p,
+  .doc-info-card p,
+  .doc-feature-line,
+  .doc-text,
+  .u-style-4,
+  .u-style-12
+) {
+  font-size: clamp(16px, 1.15vw, 18px) !important;
+}
+
+body :where(.home-final-cta p) {
+  font-size: clamp(18px, 1.3vw, 20px) !important;
+}
+
+body.home-page .hero-left .trust-text .t-label {
+  font-size: 11px !important;
+}
